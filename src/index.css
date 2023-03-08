@@ -8,9 +8,6 @@
 
 :root {
   min-height: 100vh;
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  /* line-height: 1.5;
-  font-weight: 400; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,6 +16,23 @@
 }
 
 body {
+  background-color: hsl(180, 52%, 96%);
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
+}
+
+header {
+  height: 9.8rem;
+  width: 100%;
+  background-image: url("images/bg-header-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(180, 29%, 50%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main {
+  padding: 7.5rem 0 2rem 0;
 }
