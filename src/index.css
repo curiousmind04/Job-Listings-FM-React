@@ -24,7 +24,7 @@ body {
 header {
   height: 9.8rem;
   width: 100%;
-  background-image: url("images/bg-header-mobile.svg");
+  background-image: url("/images/bg-header-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(180, 29%, 50%);
@@ -39,6 +39,6 @@ main {
 
 @media (min-width: 45rem) {
   header {
-    background-image: url("images/bg-header-desktop.svg");
+    background-image: url("/images/bg-header-desktop.svg");
   }
 }
