@@ -18,7 +18,7 @@
 body {
   background-color: hsl(180, 52%, 96%);
   font-family: "League Spartan", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 header {
@@ -35,4 +35,10 @@ header {
 
 main {
   padding: 7.5rem 0 2rem 0;
+}
+
+@media (min-width: 45rem) {
+  header {
+    background-image: url("images/bg-header-desktop.svg");
+  }
 }

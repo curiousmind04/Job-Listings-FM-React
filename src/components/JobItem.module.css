@@ -64,6 +64,7 @@ h1 {
   color: hsl(180, 14%, 20%);
   font-size: 0.96rem;
   margin-bottom: 1.1rem;
+  cursor: pointer;
 }
 
 .details {
@@ -94,4 +95,77 @@ hr {
   border-radius: 0.2rem;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 19.4rem) {
+  .company {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .featuredBadge,
+  .newBadge {
+    margin-top: 0.8rem;
+  }
+  .details {
+    line-height: 1.6rem;
+  }
+}
+
+@media (hover: hover) {
+  h1:hover {
+    color: hsl(180, 29%, 50%);
+  }
+  .tablets > div:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: #fff;
+  }
+}
+
+@media (min-width: 67rem) {
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section > :first-child {
+    display: flex;
+    align-items: center;
+  }
+  .item,
+  .featuredItem {
+    border-radius: 0.3rem;
+    padding: 2rem 2.5rem 2rem 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+  .item {
+    padding-left: calc(2.2rem + 0.3125rem);
+  }
+  .item .container,
+  .featuredItem .container {
+    width: 5.5rem;
+    height: 5.5rem;
+    position: static;
+    margin-right: 1.5rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    font-size: 1.36rem;
+    margin-bottom: 0.9rem;
+  }
+  .details {
+    margin-bottom: 0;
+  }
+  .details > span {
+    font-size: 1.1rem;
+    margin-right: 0.85rem;
+  }
+  hr {
+    display: none;
+  }
+  .tablets {
+    justify-content: flex-end;
+  }
 }

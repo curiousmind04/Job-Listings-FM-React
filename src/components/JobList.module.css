@@ -1,13 +1,12 @@
-.higher {
+.higher,
+.lower {
   width: 87%;
+  max-width: 34rem;
   margin: auto;
   list-style: none;
 }
 
 .lower {
-  width: 87%;
-  margin: auto;
-  list-style: none;
   margin-top: 5.8rem;
 }
 
@@ -67,4 +66,40 @@ button {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+@media (max-width: 19.4rem) {
+  .higher,
+  .lower {
+    width: 94%;
+  }
+}
+
+@media (hover: hover) {
+  button:hover {
+    text-decoration: underline;
+    color: hsl(180, 29%, 50%);
+  }
+  .filters div div:hover {
+    background-color: hsl(180, 14%, 20%);
+  }
+}
+
+@media (min-width: 67rem) {
+  .lower,
+  .higher {
+    max-width: 69.2rem;
+  }
+  .lower {
+    margin-top: 7rem;
+  }
+  .lower > :last-child,
+  .higher > :last-child {
+    margin-bottom: 5.5rem;
+  }
+  .selections {
+    padding: 1.2rem;
+    padding-inline: calc(2.2rem + 0.3125rem);
+    margin-bottom: 2.5rem;
+  }
 }

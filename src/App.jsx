@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import JobList from "./JobList";
+import JobList from "./components/JobList";
 
 function App() {
   const [jobs, setJobs] = useState([]);

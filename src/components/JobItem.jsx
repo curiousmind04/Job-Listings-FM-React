@@ -12,22 +12,26 @@ function JobItem(props) {
 
   return (
     <li className={props.featured ? classes.featuredItem : classes.item}>
-      <div className={classes.container}>
-        <img src={props.logo} alt="company logo" />
-      </div>
       <section>
-        <div className={classes.company}>
-          <h2>{props.company}</h2>
-          {props.new && newBadge}
-          {props.featured && featuredBadge}
-        </div>
-        <h1>{props.position}</h1>
-        <div className={classes.details}>
-          <span>{props.postedAt}</span>
-          <span>&#x2022;</span>
-          <span>{props.contract}</span>
-          <span>&#x2022;</span>
-          <span>{props.location}</span>
+        <div>
+          <div className={classes.container}>
+            <img src={props.logo} alt="company logo" />
+          </div>
+          <div>
+            <div className={classes.company}>
+              <h2>{props.company}</h2>
+              {props.new && newBadge}
+              {props.featured && featuredBadge}
+            </div>
+            <h1>{props.position}</h1>
+            <div className={classes.details}>
+              <span>{props.postedAt}</span>
+              <span>&#x2022;</span>
+              <span>{props.contract}</span>
+              <span>&#x2022;</span>
+              <span>{props.location}</span>
+            </div>
+          </div>
         </div>
         <hr />
         <div className={classes.tablets}>
