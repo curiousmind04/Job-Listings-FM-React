@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const response = await fetch("../data.json");
+      const response = await fetch("data.json");
       const data = await response.json();
       setJobs(data);
       setAllJobs(data);
